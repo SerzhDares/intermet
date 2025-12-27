@@ -39,7 +39,7 @@ body {
 
 .running_line-text {
     max-width: 768px;
-    background-image: url("/imgs/green_ellipse.svg");
+    background-image: url("../imgs/green_ellipse.svg");
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 35px;
@@ -107,11 +107,11 @@ body {
 }
 
 .search_btn {
-    background-image: url("/imgs/search.svg");
+    background-image: url("../imgs/search.svg");
 }
 
 .burger_btn {
-    background-image: url("/imgs/burger_button.svg");
+    background-image: url("../imgs/burger_button.svg");
 }
 
 .social_link {
@@ -169,14 +169,14 @@ body {
 }
 
 .banner_btn_tlg {
-    background-image: url("/imgs/telegram_mini.svg");
+    background-image: url("../imgs/telegram_mini.svg");
     background-position: right 5px center;
     text-align: left;
     padding-left: 17px;
 }
 
 .banner_btn_load {
-    background-image: url("/imgs/load.svg");
+    background-image: url("../imgs/load.svg");
     background-position: left 12px center;
 }
 
@@ -245,7 +245,7 @@ body {
 .load_field {
     background-color: #fff;
     padding: 20px;
-    background-image: url("/imgs/load.svg");
+    background-image: url("../imgs/load.svg");
     background-repeat: no-repeat;
     background-position: right 20px center;
     background-size: 28px;
@@ -290,7 +290,7 @@ body {
     border: none;
     border-radius: 100px;
     font-size: 10px;
-    background-image: url('/imgs/button_arrow.svg');
+    background-image: url('../imgs/button_arrow.svg');
     background-repeat: no-repeat;
     background-position: right 8px center;
     padding: 3px 8px;
@@ -503,7 +503,7 @@ body {
 .locality_spb {
     width: 100%;
     box-sizing: border-box;
-    background-image: url('imgs/arrow_bottom.svg');
+    background-image: url('../imgs/arrow_bottom.svg');
     background-repeat: no-repeat;
     background-position: right 15px center;
     margin-bottom: 20px;
@@ -516,7 +516,7 @@ body {
 }
 
 .locality_shushary {
-    background-image: url('/imgs/timetable_icon.svg');
+    background-image: url('../imgs/timetable_icon.svg');
     background-repeat: no-repeat;
     background-position: left 20px center;
     padding-left: 46px;
@@ -541,7 +541,7 @@ body {
 
 .locality_pass {
     display: block;
-    background-image: url('/imgs/blue_dot.svg');
+    background-image: url('../imgs/blue_dot.svg');
     background-repeat: no-repeat;
     padding-left: 18px;
     background-position: left top 15px;
@@ -557,7 +557,7 @@ body {
     position: absolute;
     width: 100%;
     height: 270px;
-    background: url('/imgs/map_cover.jpg');
+    background: url('../imgs/map_cover.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -628,7 +628,7 @@ body {
 
 .phone_action_right {
     color: #B1B1B1;
-    background-image: url('/imgs/phone_icon_gradient.svg');
+    background-image: url('../imgs/phone_icon_gradient.svg');
     background-repeat: no-repeat;
     background-position: right center;
     height: 25px;
@@ -666,13 +666,13 @@ body {
 }
 
 .photos_slider_left {
-    background-image: url('/imgs/photo_slider_btn_left.svg');
+    background-image: url('../imgs/photo_slider_btn_left.svg');
     top: 61px;
     left: 12px;
 }
 
 .photos_slider_right {
-    background-image: url('/imgs/photo_slider_btn_right.svg');
+    background-image: url('../imgs/photo_slider_btn_right.svg');
     right: 12px;
     top: 61px;
 }
