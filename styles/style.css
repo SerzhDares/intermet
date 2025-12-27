@@ -677,4 +677,332 @@ body {
     top: 61px;
 }
 
+.reviews_block {
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-bottom: 32px;
+}
 
+.reviews_top-block {
+    margin-bottom: 32px;
+}
+
+.reviews_groups {
+    display: flex;
+    overflow: scroll;
+}
+
+.reviews_groups::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.reviews_group:nth-child(n+2) {
+    margin-left: 40px;
+}
+
+.review {
+    display: flex;
+    font-size: 14px;
+    width: 360px;
+}
+
+.review:nth-child(n+2) {
+    margin-top: 40px;
+}
+
+.review_img {
+    margin-right: 16px;
+}
+
+.review_username {
+    font-weight: 500;
+}
+
+.review_text {
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    /* max-height: 34px;*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.review_link {
+    color: #45B567;
+}
+
+.application_block {
+    background: linear-gradient(110.95deg, #45B567 -22.6%, #345F99 58.46%);
+    color: #fff;
+    margin-top: 0;
+    padding-bottom: 32px;
+    margin-bottom: 8px;
+}
+
+.application_top-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.application_block_title {
+    text-transform: uppercase;
+    margin-right: 8px;
+}
+
+.application_text {
+    margin-bottom: 20px;
+}
+
+.application_text_block {
+    font-size: 14px;
+}
+
+.application_start_text {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.application_form_btn {
+    width: 100%;
+    height: 64px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    background-image: url('../imgs/application_btn_arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+}
+
+.af_input_block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.application_form_input {
+    height: 48px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    border: 0.5px solid #FFFFFF4F;
+    backdrop-filter: blur(18px);
+    width: calc(50% - 6px);
+    background: #FFFFFF33;
+    color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.application_form_input::placeholder {
+    color: #fff;
+}
+
+.application_form_input:nth-child(n+2) {
+    margin-left: 12px;
+}
+
+.af_select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('../imgs/select_arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    cursor: pointer;
+}
+
+.af_checkbox-block {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.conf-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    margin-right: 12px;
+    content: "";
+    width: 19px;
+    height: 19px;
+    border-radius: 100px;
+    border: 0.5px solid #FFFFFF4F;
+    background: #FFFFFF33;
+    backdrop-filter: blur(18px);
+    box-sizing: border-box;
+}
+
+.conf-checkbox:checked {
+    background-image: url('../imgs/white_checked.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.conf-checkbox_text {
+    color: #fff;
+    font-size: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.af_message {
+    background: #FFFFFF33;
+    border-radius: 32px;
+    border: 0.5px solid #FFFFFF4F;
+    backdrop-filter: blur(18px);
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 24px 20px;
+    margin-bottom: 12px;
+    color: #fff;
+    resize: none;
+}
+
+.af_message::placeholder {
+    color: #FFFFFF80;
+    font-size: 14px;
+
+}
+
+.mob_menu_block {
+    margin-top: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.menu_list {
+    padding: 0;
+    margin: 0;
+}
+
+.menu_list_item {
+    list-style-type: none;
+    padding: 26px 0;
+    border-bottom: 1px solid #F1F1F1;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_item_link {
+    color: #000;
+    text-decoration: none;
+}
+
+.about_item {
+    background-image: url('../imgs/menu_about.svg');
+}
+
+.price_item {
+    background-image: url('../imgs/menu_price.svg');
+}
+
+.menu_item_download {
+    color: #D9D9D9;
+    background-image: url('../imgs/download_icon.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    text-decoration: none;
+    padding-right: 36px;
+}
+
+.tech_item {
+    background-image: url('../imgs/menu_tech.svg');
+}
+
+.table_item {
+    background-image: url('../imgs/menu_table.svg');
+}
+
+.no-metall_item {
+    background-image: url('../imgs/menu_no-metall.svg');
+}
+
+.subscribe_item {
+    background-image: url('../imgs/menu_subscribe.svg');
+}
+
+.control_item {
+    background-image: url('../imgs/menu_control.svg');
+}
+
+.license_item {
+    background-image: url('../imgs/menu_license.svg');
+}
+
+.details_item {
+    background-image: url('../imgs/menu_details.svg');
+}
+
+.faq_item {
+    background-image: url('../imgs/menu_faq.svg');
+    border-bottom: none;
+}
+
+.footer_mob {
+    padding: 20px 0;
+}
+
+.footer_mob_data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conf_policy_link {
+    text-decoration: none;
+    color: #84CE73;
+}
+
+.copyright_text {
+    color: #1C598C;
+}
+
+.bottom_menu_block {
+    margin-top: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 20px 0 30px;
+}
+
+.bottom_menu_list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom_menu_item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom_menu_link {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.bottom_menu_link:nth-child(n+2) {
+    margin-left: 20px;
+}
+
+.bmi_icon {
+    margin-bottom: 8px;
+}
+
+.bmi_text {
+    display: block;
+    text-align: center;
+}
