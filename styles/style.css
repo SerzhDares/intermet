@@ -189,7 +189,7 @@ body {
 .iphone {
     position: absolute;
     right: 0;
-    top: -25px;
+    top: 0px;
     width: 135px;
     height: 210px;
     transform: rotate(7deg);
@@ -198,7 +198,68 @@ body {
 .present {
     position: absolute;
     right: 87px;
-    top: 70px;
+    top: 90px;
+}
+
+.banner_text_2 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.pogruz_present {
+    position: absolute;
+    right: -30px;
+    top: -20px;
+}
+
+.left_banner_block_3 {
+    padding-top: 10px;
+}
+
+.banner_text_3 {
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.banner_text_3-big {
+    font-size: 36px;
+}
+
+.banner_text_3,
+.banner_text_3-big {
+    text-transform: uppercase;
+}
+
+.scrap_img {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    height: 330px;
+}
+
+.swiper-pagination {
+    margin-top: -30px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, 45px) !important;
+}
+
+.swiper-pagination-bullet {
+    width: 32px !important;
+    height: 2px !important;
+    border-radius: 0 !important;
+    background: linear-gradient(113.91deg, #45B567 8.27%, #345F99 99.48%) !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet:nth-child(n+2) {
+    margin-left: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff !important;
 }
 
 .advantages_block,
