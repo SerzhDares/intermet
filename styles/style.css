@@ -138,9 +138,9 @@ body, button, input {
 
 .burger_menu {
     position: absolute;
-    right: -50%;
+    right: -70%;
     top: 0;
-    width: 50%;
+    width: 70%;
     background: linear-gradient(113.91deg, #45B567 8.27%, #345F99 99.48%);
     visibility: hidden;
     padding-bottom: 170px;
@@ -164,11 +164,11 @@ body, button, input {
 }
 
 .burger_close_btn {
-    background-image: url("../imgs/close_menu.svg");
+    background-image: url("../imgs/close_menu.png");
     background-repeat: no-repeat;
     background-color: transparent;
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
