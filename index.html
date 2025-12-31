@@ -114,8 +114,12 @@
                                 <h1 class="banner_title">узнай цену <span class="banner_title_bold">за&nbsp;5&nbsp;минут</span></h1>
                                 <span class="banner_text">Пришли фото в Telegram — мы оценим и предложим лучшую цену</span>
                                 <div class="banner_buttons_block">
-                                    <button class="banner_btn banner_btn_tlg">Узнать стоимость</button>
-                                    <button class="banner_btn banner_btn_load">Загрузить фото</button>
+                                    <a href="https://t.me/#" class="social_link">
+                                        <button class="banner_btn banner_btn_tlg">Узнать стоимость</button>
+                                    </a>
+                                    <button class="banner_btn banner_btn_load">Загрузить фото
+                                        <input class="load_file" type="file" accept="image/*"/>
+                                    </button>
                                 </div>
                             </div>
                             <div class="banner_imgs_block">
@@ -511,7 +515,7 @@
                     <input type="text" class="application_form_input" placeholder="Телефон" required/>
                 </div>
                 <div class="af_input_block">
-                    <input type="email" class="application_form_input" placeholder="Электронная почта" required/>
+                    <input type="email" class="application_form_input" placeholder="Эл. почта" required/>
                     <select class="application_form_input af_select">
                         <option value="">Тема обращения</option>
                         <option value="1">1</option>

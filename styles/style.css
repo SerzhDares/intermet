@@ -6,7 +6,7 @@ body {
     background-color: #BCBCBC33;
 }
 
-body, button, input {
+body, button, input, textarea {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -395,7 +395,7 @@ body, button, input {
 
 .advantages_block,
 .services_block {
-    padding: 32px 0 10px;
+    padding: 32px 0;
     border-radius: 32px;
     margin-top: -32px;
     position: relative;
@@ -410,6 +410,7 @@ body, button, input {
 
 .advantages::-webkit-scrollbar {
     width: 0;
+    height: 0
 }
 
 
@@ -1427,6 +1428,11 @@ body, button, input {
     .burger_menu {
         top: -72px;
         right: -76%;
+    }
+
+    .application_form_input,
+    .af_message {
+        font-size: 12px;
     }
 
     .bottom_menu_link:nth-child(n+2) {
