@@ -72,10 +72,65 @@ allBlocks.forEach(block => {
       if (e.target.textContent == 'Шушары') {
         mapAddress.textContent = 'Московское шоссе 109, корп. 4';
         mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Ab7762a1b283fdde24950b2af2633a8d844531fde53b06b9b25faedd95f310549&source=constructor';
-
       }
   })
 })
+
+// MAP-ACTION_CHANGER
+const allIcons = document.querySelectorAll('.map_icon');
+const allActions = document.querySelectorAll('.map_action_link');
+allIcons.forEach(icon => {
+  icon.addEventListener('click', e => {
+    allIcons.forEach(i => {
+      i.classList.remove('map_icon_active', 'map_icon_active_navigator');
+      allActions.forEach(action => {
+        action.classList.add('invisible');
+      })
+    })
+    
+    e.target.classList.contains('map_icon_navigator') ? 
+      e.target.classList.add('map_icon_active_navigator') : 
+      e.target.classList.add('map_icon_active');
+
+    if (e.target.classList.contains('map_icon_phone')) {
+      document.querySelector('.phone_action_link').classList.remove('invisible');
+    }
+    if (e.target.classList.contains('map_icon_whatsapp')) {
+      document.querySelector('.whatsapp_action_link').classList.remove('invisible');
+    }
+    if (e.target.classList.contains('map_icon_telegram')) {
+      document.querySelector('.telegram_action_link').classList.remove('invisible');
+    }
+    if (e.target.classList.contains('map_icon_max')) {
+      document.querySelector('.max_action_link').classList.remove('invisible');
+    }
+    if (e.target.classList.contains('map_icon_ymaps')) {
+      document.querySelector('.ymaps_action_link').classList.remove('invisible');
+    }
+    if (e.target.classList.contains('map_icon_navigator')) {
+      document.querySelectorAll('.navigator_action_link').forEach(nav_al => {
+        nav_al.classList.remove('invisible');
+      })
+    }
+    if (e.target.classList.contains('map_icon_2gis')) {
+      document.querySelector('.twogis_action_link').classList.remove('invisible');
+    }
+    if (e.target.classList.contains('map_icon_gmaps')) {
+      document.querySelector('.gmaps_action_link').classList.remove('invisible');
+    }
+  })
+})
+
+// PHOTOS-SLIDER
+const photosSwiper = new Swiper('.swiper_photo', {
+  direction: 'horizontal',
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 
 // OPEN FORM
