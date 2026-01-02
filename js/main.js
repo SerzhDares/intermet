@@ -43,8 +43,20 @@ fileInput.addEventListener('change', () => {
 const allBlocks = document.querySelectorAll('.locality_block');
 const mapAddress = document.querySelector('.map_address_text');
 const mapLink = document.querySelector('.locality_map');
+const spbBlock =  document.querySelector('.locality_map_block');
+const workTime = document.querySelector('.locality_time');
+const localityTravel = document.querySelector('.locality_travel');
+const localityImgs =  document.querySelector('.locality_info_imgs');
 allBlocks.forEach(block => {
     block.addEventListener('click', e => {
+      localityTravel.classList.remove('locality_pass');
+      localityImgs.innerHTML = `
+          <img src="imgs/locality_info_icon_1.svg" alt="изображение" class="locality_info_icon">
+          <img src="imgs/locality_info_icon_2.svg" alt="изображение" class="locality_info_icon">
+          <img src="imgs/locality_info_icon_3.svg" alt="изображение" class="locality_info_icon">`
+      if (e.target.textContent !== 'Санкт-Петербург') {
+        spbBlock.classList.remove('locality_map_block-img');
+      }
       allBlocks.forEach(b => {
         b.classList.remove('locality_block_active')
       })
@@ -52,26 +64,47 @@ allBlocks.forEach(block => {
       if (e.target.textContent == 'Волхонка') {
         mapAddress.textContent = 'Волхонское шоссе, 4 к10';
         mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A118942572df26f872ee34219ba6551d5dd49f5e26ac9246918bd003f8d0f9b5e&amp;source=constructor';
+        workTime.textContent = 'Ежедневно с 09:00 до 21:00';
+        localityTravel.innerHTML = '';
       }
       if (e.target.textContent == 'Порт') {
         mapAddress.textContent = 'наб. реки Екатерингофки 37';
         mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Ad5375bd3ed3813af9b8624ebe9a878be367941a3bae4e67f220fc6a4b7c683e6&source=constructor';
+        workTime.textContent = 'Ежедневно с 09:00 до 19:00';
+        localityTravel.innerHTML = '';
       }
       if (e.target.textContent == 'Колпино') {
         mapAddress.textContent = 'Финляндская ул. 13, корп. 5';
         mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Aa4d462b749ca4e1210fdcddd35efbf02d974585f812d3058ca15bb63381ec4d8&source=constructor';
+        workTime.textContent = 'Ежедневно с 09:00 до 19:00';
+        localityTravel.innerHTML = '';
       }
       if (e.target.textContent == 'Парнас') {
         mapAddress.textContent = '2-й Верхний пер. 4, корп. 1Ж';
         mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A9cdee117fab87b90b113f627b800e59c3c0ff2e71ec70f41399b847e290f5c10&source=constructor';
+        workTime.textContent = 'Ежедневно с 09:00 до 19:00';
+        localityTravel.innerHTML = '';
       }
       if (e.target.textContent == 'Большевиков') {
         mapAddress.textContent = 'Складская ул. 6, корп. 1';
         mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A4f7cddb97456a423f77a908195fbe0f75da81bc0e06446dd426efb0749e898c8&source=constructor';
+        workTime.textContent = 'Ежедневно с 09:00 до 19:00';
+        localityTravel.classList.add('locality_pass');
+        localityTravel.innerHTML = 'Проезд осуществляется<br/>через КПП';
       }
       if (e.target.textContent == 'Шушары') {
         mapAddress.textContent = 'Московское шоссе 109, корп. 4';
         mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Ab7762a1b283fdde24950b2af2633a8d844531fde53b06b9b25faedd95f310549&source=constructor';
+        workTime.textContent = 'Ежедневно с 09:00 до 19:00';
+        localityTravel.innerHTML = '';
+      }
+      if (e.target.textContent == 'Санкт-Петербург') {
+        spbBlock.classList.add('locality_map_block-img');
+        mapAddress.textContent = 'Выберите площадку';
+        mapLink.src = '';
+        workTime.textContent = '';
+        localityTravel.innerHTML = '';
+        localityImgs.innerHTML = '';
       }
   })
 })

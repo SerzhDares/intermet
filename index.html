@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/itc-slider.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script defer src="js/itc-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script defer src="js/main.js"></script>
     <title>Интермет</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
 <div class="body-wrapper">
@@ -118,7 +118,7 @@
                                         <button class="banner_btn banner_btn_tlg">Узнать стоимость</button>
                                     </a>
                                     <button class="banner_btn banner_btn_load">Загрузить фото
-                                        <input class="load_file" type="file" accept="image/*"/>
+                                        <!-- <input class="load_file_btn" type="file" multiple="multiple" name="files[]" accept="image/*"/> -->
                                     </button>
                                 </div>
                             </div>
@@ -179,12 +179,12 @@
         <div class="container_768">
             <div class="load_field_border">
                 <div class="load_field">Загрузить фото / Узнать цену
-                    <input class="load_file" type="file" accept="image/*"/>
+                    <input class="load_file" type="file" multiple="multiple" name="files[]" accept="image/*"/>
                 </div>
             </div>
             <form action="" class="loaded_file_form invisible">
                 <div class="load_field_border loaded_field_border">
-                    <div class="load_field loaded_field">Файл успешно загружен</div>
+                    <div class="load_field loaded_field">Файлы успешно загружены</div>
                 </div>
                 <div class="af_input_block">
                     <input type="text" class="application_form_input" placeholder="Имя" required/>
@@ -314,9 +314,9 @@
                 </div>
             </div>
             <div class="localities_block">
-                <div class="locality_block locality_spb">Санкт-Петербург</div>
+                <div class="locality_block locality_spb locality_block_active">Санкт-Петербург</div>
                 <div class="stations_block">
-                    <div class="locality_block locality_block_active">Волхонка</div>
+                    <div class="locality_block">Волхонка</div>
                     <div class="locality_block">Порт</div>
                     <div class="locality_block">Колпино</div>
                     <div class="locality_block">Парнас</div>
@@ -326,21 +326,19 @@
             </div>
             <div class="locality_info">
                 <div class="locality_info_left">
-                    <span class="locality_time">Ежедневно с 08:00 до 18:00</span>
+                    <span class="locality_time"></span>
                     <div class="locality_info_imgs">
-                        <img src="imgs/locality_info_icon_1.svg" alt="изображение" class="locality_info_icon">
-                        <img src="imgs/locality_info_icon_2.svg" alt="изображение" class="locality_info_icon">
-                        <img src="imgs/locality_info_icon_3.svg" alt="изображение" class="locality_info_icon">
+
                     </div>
                 </div>
-                <span class="locality_pass">Проезд осуществляется<br/>через КПП</span>
+                <span class="locality_travel"></span>
             </div>
-            <div class="locality_map_block" data-map="https://yandex.ru/map-widget/v1/?um=constructor%3Ab7762a1b283fdde24950b2af2633a8d844531fde53b06b9b25faedd95f310549&amp;source=constructor" data-tab=".info-tabcontent-1">
+            <div class="locality_map_block locality_map_block-img">
                 <div class="map_address_block">
                     <img src="imgs/geo_icon.svg" alt="Геопозиция" class="geo_icon">
-                    <span class="map_address_text">Волхонское шоссе, 4 к10</span>
+                    <span class="map_address_text">Выберите площадку</span>
                 </div>
-                <iframe class="locality_map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A118942572df26f872ee34219ba6551d5dd49f5e26ac9246918bd003f8d0f9b5e&amp;source=constructor"></iframe>
+                <iframe class="locality_map" src=""></iframe>
                 <div class="map_icons_block">
                     <img src="imgs/map_phone.svg" alt="Телефон" class="map_icon map_icon_active map_icon_phone">
                     <img src="imgs/map_whatsapp.svg" alt="WhatsApp" class="map_icon map_icon_whatsapp">
