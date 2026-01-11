@@ -344,6 +344,7 @@ body, button, input, textarea {
     position: absolute;
     right: 87px;
     top: 90px;
+    width: 118px;
 }
 
 .banner_text_2 {
@@ -382,6 +383,12 @@ body, button, input, textarea {
     right: 0;
     top: -25px;
     height: 330px;
+}
+
+.swiper-slide {
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
 }
 
 .swiper-pagination {
@@ -535,8 +542,17 @@ body, button, input, textarea {
     overflow: scroll;
 }
 
+.services_title_img {
+    width: 175px;
+    height: 41px;
+}
+
 .services::-webkit-scrollbar {
     width: 0;
+}
+
+.service {
+    width: 191px;
 }
 
 .service:nth-child(n+2) {
@@ -575,6 +591,10 @@ body, button, input, textarea {
     margin-bottom: 8px;
 }
 
+.advantage_bottom {
+    width: 427px;
+}
+
 .prom_block,
 .special_prices_block {
     margin-top: 0;
@@ -583,6 +603,10 @@ body, button, input, textarea {
 .advantage_bottom:nth-child(n+2), 
 .promotion_link:nth-child(n+2) {
     margin-left: 12px;
+}
+
+.promotion {
+    width: 320px;
 }
 
 .special_prices {
@@ -758,6 +782,9 @@ body, button, input, textarea {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+}
+
+.locality_info_icon {
     margin-bottom: 24px;
 }
 
@@ -1025,6 +1052,11 @@ body, button, input, textarea {
 .application_block_title {
     text-transform: uppercase;
     margin-right: 8px;
+}
+
+.application_title_img {
+    width: 175px;
+    height: 41px;
 }
 
 .application_text {
@@ -1444,7 +1476,7 @@ body, button, input, textarea {
     }
 
     .burger_menu {
-        top: -72px;
+        top: -77px;
         right: -76%;
     }
 
@@ -1473,7 +1505,7 @@ body, button, input, textarea {
     }
 
     .present {
-        right: 40px;
+        right: 33px;
     }
 
     .left_banner_block_2 {
@@ -1561,6 +1593,7 @@ body, button, input, textarea {
     .services_title_img,
     .application_title_img {
         width: 140px;
+        height: 36px;
     }
 
     .phone_action_right {
