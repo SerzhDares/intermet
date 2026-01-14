@@ -817,6 +817,7 @@ body, button, input, textarea {
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
+    border-radius: 12px;
 }
 
 .locality_map {
@@ -1580,12 +1581,9 @@ body, button, input, textarea {
         display: block;
     }
 
-    .widget_2gis {
+    .widget_ymaps {
+        margin-right: 0;
         margin-bottom: 10px;
-    }
-
-    .grade_widget:nth-child(n+2) {
-        margin-left: 0;
     }
 
     .services_title_img,
