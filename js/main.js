@@ -48,13 +48,28 @@ const mapImgBlock = document.querySelector('.locality_map_block-img');
 const workTime = document.querySelector('.locality_time');
 const localityTravel = document.querySelector('.locality_travel');
 const localityImgs =  document.querySelector('.locality_info_imgs');
+const phoneActionText = document.querySelector('.phone_action_text');
+const phoneActionLink = document.querySelector('.phone_action_link');
+const whatsappActionLink = document.querySelector('.whatsapp_action_link');
+const telegramActionLink = document.querySelector('.telegram_action_link');
+const maxActionLink = document.querySelector('.max_action_link');
+const yMapsActionLink = document.querySelector('.ymaps_action_link');
+const yNavigatorActionLink = document.querySelector('.ynav_action_link');
+const gNavigatorActionLink = document.querySelector('.gnav_action_link');
+const twogisActionLink = document.querySelector('.twogis_action_link');
+const gMapsActionLink = document.querySelector('.gmaps_action_link');
+
+
 mapImgBlock.addEventListener('click', () => {
+  if (mapBlock.classList.contains('locality_map_block-img')) {
     mapBlock.classList.remove('locality_map_block-img');
     mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A4f7cddb97456a423f77a908195fbe0f75da81bc0e06446dd426efb0749e898c8&source=constructor';
+  }
 })
+
 allBlocks.forEach(block => {
     block.addEventListener('click', e => {
-      mapBlock.classList.add('locality_map_block-img');
+      mapBlock.classList.remove('locality_map_block-img');
       localityTravel.classList.remove('locality_pass');
       localityImgs.innerHTML = ``;
       allBlocks.forEach(b => {
@@ -75,6 +90,17 @@ allBlocks.forEach(block => {
               mapBlock.classList.remove('locality_map_block-img');
               mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A4f7cddb97456a423f77a908195fbe0f75da81bc0e06446dd426efb0749e898c8&source=constructor';
           })
+          mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A4f7cddb97456a423f77a908195fbe0f75da81bc0e06446dd426efb0749e898c8&source=constructor';
+          phoneActionText.textContent = '8 (812) 443-62-06';
+          phoneActionLink.href = '';
+          whatsappActionLink.href = '';
+          telegramActionLink.href = '';
+          maxActionLink.href = '';
+          yMapsActionLink.href = '';
+          yNavigatorActionLink.href = '';
+          gNavigatorActionLink.href = '';
+          twogisActionLink.href = '';
+          gMapsActionLink.href = '';
           break;
         case 'Парнас':
           mapAddress.textContent = '2-й Верхний пер. 4, корп. 1Ж';
@@ -84,10 +110,17 @@ allBlocks.forEach(block => {
               <img src="imgs/locality_info_icon_2.svg" alt="Весы" class="locality_info_icon">
               <img src="imgs/locality_info_icon_3.svg" alt="Кофе" class="locality_info_icon">`
           localityTravel.innerHTML = '';
-          mapImgBlock.addEventListener('click', () => {
-              mapBlock.classList.remove('locality_map_block-img');
-              mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A9cdee117fab87b90b113f627b800e59c3c0ff2e71ec70f41399b847e290f5c10&source=constructor';
-          })
+          mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A9cdee117fab87b90b113f627b800e59c3c0ff2e71ec70f41399b847e290f5c10&source=constructor';
+          phoneActionText.textContent = '8 (812) 443-62-06';
+          phoneActionLink.href = '';
+          whatsappActionLink.href = '';
+          telegramActionLink.href = '';
+          maxActionLink.href = '';
+          yMapsActionLink.href = '';
+          yNavigatorActionLink.href = '';
+          gNavigatorActionLink.href = '';
+          twogisActionLink.href = '';
+          gMapsActionLink.href = '';
           break;
         case 'Шушары':
           mapAddress.textContent = 'Московское шоссе 109, корп. 4';
@@ -97,10 +130,17 @@ allBlocks.forEach(block => {
               <img src="imgs/locality_info_icon_2.svg" alt="Весы" class="locality_info_icon">
               <img src="imgs/locality_info_icon_3.svg" alt="Кофе" class="locality_info_icon">`
           localityTravel.innerHTML = '';
-          mapImgBlock.addEventListener('click', () => {
-              mapBlock.classList.remove('locality_map_block-img');
-              mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Ab7762a1b283fdde24950b2af2633a8d844531fde53b06b9b25faedd95f310549&source=constructor';
-          })
+          mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Ab7762a1b283fdde24950b2af2633a8d844531fde53b06b9b25faedd95f310549&source=constructor';
+          phoneActionText.textContent = '8 (812) 443-62-06';
+          phoneActionLink.href = '';
+          whatsappActionLink.href = '';
+          telegramActionLink.href = '';
+          maxActionLink.href = '';
+          yMapsActionLink.href = '';
+          yNavigatorActionLink.href = '';
+          gNavigatorActionLink.href = '';
+          twogisActionLink.href = '';
+          gMapsActionLink.href = '';
           break;
         case 'Порт':
           mapAddress.textContent = 'наб. реки Екатерингофки 37';
@@ -109,10 +149,17 @@ allBlocks.forEach(block => {
               <img src="imgs/locality_info_icon_1.svg" alt="Оплата на карту" class="locality_info_icon">
               <img src="imgs/locality_info_icon_2.svg" alt="Весы" class="locality_info_icon">`
           localityTravel.innerHTML = '';
-          mapImgBlock.addEventListener('click', () => {
-              mapBlock.classList.remove('locality_map_block-img');
-              mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Ad5375bd3ed3813af9b8624ebe9a878be367941a3bae4e67f220fc6a4b7c683e6&source=constructor';
-          })
+          mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Ad5375bd3ed3813af9b8624ebe9a878be367941a3bae4e67f220fc6a4b7c683e6&source=constructor';
+          phoneActionText.textContent = '8 (812) 443-62-06';          
+          phoneActionLink.href = '';
+          whatsappActionLink.href = '';
+          telegramActionLink.href = '';
+          maxActionLink.href = '';
+          yMapsActionLink.href = '';
+          yNavigatorActionLink.href = '';
+          gNavigatorActionLink.href = '';
+          twogisActionLink.href = '';
+          gMapsActionLink.href = '';
           break;
         case 'Волхонка':
           mapAddress.textContent = 'Волхонское шоссе, 4 к10';
@@ -120,10 +167,17 @@ allBlocks.forEach(block => {
           localityImgs.innerHTML = `
               <img src="imgs/locality_info_icon_1.svg" alt="Оплата на карту" class="locality_info_icon">`
           localityTravel.innerHTML = '';
-          mapImgBlock.addEventListener('click', () => {
-              mapBlock.classList.remove('locality_map_block-img');
-              mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A118942572df26f872ee34219ba6551d5dd49f5e26ac9246918bd003f8d0f9b5e&amp;source=constructor';
-          })
+          mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A118942572df26f872ee34219ba6551d5dd49f5e26ac9246918bd003f8d0f9b5e&amp;source=constructor';
+          phoneActionText.textContent = '8 (812) 443-62-06';
+          phoneActionLink.href = '';
+          whatsappActionLink.href = '';
+          telegramActionLink.href = '';
+          maxActionLink.href = '';
+          yMapsActionLink.href = '';
+          yNavigatorActionLink.href = '';
+          gNavigatorActionLink.href = '';
+          twogisActionLink.href = '';
+          gMapsActionLink.href = '';
           break;
         case 'Колпино':
           mapAddress.textContent = 'Финляндская ул. 13, корп. 5';
@@ -131,12 +185,18 @@ allBlocks.forEach(block => {
           localityImgs.innerHTML = `
               <img src="imgs/locality_info_icon_1.svg" alt="Оплата на карту" class="locality_info_icon">`
           localityTravel.innerHTML = '';
-          mapImgBlock.addEventListener('click', () => {
-              mapBlock.classList.remove('locality_map_block-img');
-              mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Aa4d462b749ca4e1210fdcddd35efbf02d974585f812d3058ca15bb63381ec4d8&source=constructor';
-          })
+          mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Aa4d462b749ca4e1210fdcddd35efbf02d974585f812d3058ca15bb63381ec4d8&source=constructor';
+          phoneActionText.textContent = '8 (812) 443-62-06';
+          phoneActionLink.href = '';
+          whatsappActionLink.href = '';
+          telegramActionLink.href = '';
+          maxActionLink.href = '';
+          yMapsActionLink.href = '';
+          yNavigatorActionLink.href = '';
+          gNavigatorActionLink.href = '';
+          twogisActionLink.href = '';
+          gMapsActionLink.href = '';
           break;
-          default:
       }
   })
 })
