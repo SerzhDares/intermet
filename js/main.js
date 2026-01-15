@@ -60,7 +60,7 @@ const twogisActionLink = document.querySelector('.twogis_action_link');
 const gMapsActionLink = document.querySelector('.gmaps_action_link');
 
 
-mapImgBlock.addEventListener('click', () => {
+mapBlock.addEventListener('click', () => {
   if (mapBlock.classList.contains('locality_map_block-img')) {
     mapBlock.classList.remove('locality_map_block-img');
     mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A4f7cddb97456a423f77a908195fbe0f75da81bc0e06446dd426efb0749e898c8&source=constructor';
@@ -86,10 +86,6 @@ allBlocks.forEach(block => {
               <img src="imgs/locality_info_icon_3.svg" alt="Кофе" class="locality_info_icon">`
           localityTravel.classList.add('locality_pass');
           localityTravel.innerHTML = 'Проезд осуществляется<br/>через КПП';
-          mapImgBlock.addEventListener('click', () => {
-              mapBlock.classList.remove('locality_map_block-img');
-              mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A4f7cddb97456a423f77a908195fbe0f75da81bc0e06446dd426efb0749e898c8&source=constructor';
-          })
           mapLink.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A4f7cddb97456a423f77a908195fbe0f75da81bc0e06446dd426efb0749e898c8&source=constructor';
           phoneActionText.textContent = '8 (812) 443-62-06';
           phoneActionLink.href = '';
